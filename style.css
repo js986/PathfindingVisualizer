@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+#board {
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.column {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.row {
+    font-size: 0px;
+}
+
+
+.row:last-child .column {
+    border-bottom: none;
+}
+
+.row .column:last-child {
+    border-right: none;
+}

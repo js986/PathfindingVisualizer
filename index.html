@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Path Finder</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <section>
+    <h1>Pathfinding Visualizer</h1>
+    <div id="formDiv">
+    <form id="form">
+      <label for="algs">Choose Algorithm</label>
+      <select name="Algorithm" id="algs">
+        <option value="0">A Star</option>
+        <option value="1">Breadth First Search</option>
+        <option value="2">Depth First Search</option>
+        <option value="3">Djiktra's Algorithm</option>
+        <option value="4">Best First Search</option>
+        <br>
+        <input type="submit" id="submit">
+      </select>
+    </form>
+  <br>
+  </div>
+    <div id="clearDiv">
+      <button id="clear">Clear Board</button>
+    </div>
+    <br>
+    <div id="board"></div>
+  </section>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
